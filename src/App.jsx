@@ -21,6 +21,20 @@ const reducer = (state, action) => {
 
 
 function App() {
+  const [state, dispatch] = useReducer(reducer, initialState);
+
+  const addTodo = text => {
+    dispatch({ type: 'ADD_TODO', payload: text });
+  };
+
+  const toggleTodo = id => {
+    dispatch({ type: 'TOGGLE_TODO', payload: id });
+  };
+
+  const deleteTodo = id => {
+    dispatch({ type: 'DELETE_TODO', payload: id })
+  };
+
 
   return (
     <>
