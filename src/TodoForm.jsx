@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function TodoForm() {
+function TodoForm({ addTodo }) {
 
     return(
         <>
