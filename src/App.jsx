@@ -1,5 +1,5 @@
 import { useState, useReducer } from 'react';
-import TodoList from './ToDoList';
+import ToDoList from './ToDoList';
 import TodoForm from './TodoForm';
 
 const initialState = [];
@@ -41,7 +41,7 @@ function App() {
       <div>
         <h1>To-do List</h1>
         <TodoForm addTodo={addTodo} />
-        <TodoList todos={state} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
+        <ToDoList todos={state} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
       </div>
     </>
   )
