@@ -1,9 +1,14 @@
-import { useState } from 'react'
+import { useState , useReducer } from 'react'
 
 function ToDoList() {
+    const initialState = [];
+
+    const [state, dispatch] = useReducer(reducer, initialState)
+
 
     return(
         <>
+            <h1>To-do List</h1>
         </>
     )
 }
